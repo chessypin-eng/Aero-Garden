@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#dff8f7">
+	<meta name="description" content="Temukan wallpaper, soundscape, dan digital goods bernuansa langit cerah di Aerogarden." />
+	<title>Aerogarden — Digital goods for a brighter day</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="announcement"><span class="announcement-sun" aria-hidden="true">✳</span> A little sunshine for your screen <span class="announcement-dot" aria-hidden="true"></span> Gratis ongkir? Semuanya digital.</div>
+
+	<header class="site-header">
+		<a class="brand" href="#home" aria-label="Aerogarden, beranda">
+			<span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+			<span>aerogarden<span class="brand-period">.</span></span>
+		</a>
+		<nav class="main-nav" aria-label="Navigasi utama">
+			<a class="nav-link active" href="#shop">Shop</a>
+			<a class="nav-link" href="#play">Play & win</a>
+			<a class="nav-link" href="#story">Our world</a>
+			<a class="nav-link" href="#footer">Good things</a>
+		</nav>
+		<div class="header-actions">
+			<button class="icon-button search-toggle" type="button" aria-label="Cari produk" title="Cari produk">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+			</button>
+			<button class="cart-button" type="button" data-open-cart aria-label="Buka keranjang">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 1.9-1.4L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+				<span>Bag</span><span class="cart-count" aria-live="polite">0</span>
+			</button>
+		</div>
+	</header>
+
+	<main id="home">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="hero-copy">
+				<div class="eyebrow"><span class="eyebrow-line"></span> DIGITAL GOODS, SUNNY MOOD</div>
+				<h1 id="hero-title">A brighter little<br>world, <span>made for you.</span></h1>
+				<p>Temukan hal-hal digital yang bikin harimu terasa lebih segar. Dibuat dengan hati, siap diunduh seketika.</p>
+				<div class="hero-buttons">
+					<a class="button button-primary" href="#shop">Jelajahi koleksi <span aria-hidden="true">↗</span></a>
+					<div class="hero-note"><span class="tiny-sparkle" aria-hidden="true">✳</span><span>Download instan<br><strong>langsung setelah checkout</strong></span></div>
+				</div>
+				<div class="hero-social-proof"><div class="avatar-stack" aria-hidden="true"><span>R</span><span>A</span><span>K</span></div><span><strong>2.4k+</strong> happy little downloads</span></div>
+			</div>
+			<div class="hero-art" aria-label="Langit cerah, lautan biru, dan dedaunan tropis">
+				<img class="hero-photo" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=85" alt="Laut tropis berwarna biru jernih di bawah langit cerah">
+				<div class="hero-photo-wash"></div>
+				<div class="hero-sun"></div>
+				<div class="hero-glass-bubble bubble-one"></div>
+				<div class="hero-glass-bubble bubble-two"></div>
+				<div class="hero-cloud cloud-one"><span></span></div>
+				<div class="hero-cloud cloud-two"><span></span></div>
+				<div class="hero-caption"><span class="caption-icon" aria-hidden="true">☼</span><span>MAKE SPACE<br>FOR THE GOOD</span><span class="caption-arrow" aria-hidden="true">↗</span></div>
+				<div class="hero-float-tag"><span class="tag-dot"></span> your daily dose of blue</div>
+				<div class="hero-art-index">01 <span></span> 04</div>
+			</div>
+			<div class="hero-bottom-line"><span>INSPIRED BY THE OPEN SKY</span><span>EST. ON A VERY SUNNY DAY <span aria-hidden="true">✳</span></span></div>
+		</section>
+
+		<section class="shop-section" id="shop" aria-labelledby="shop-title">
+			<div class="shop-heading">
+				<div><div class="eyebrow"><span class="eyebrow-line"></span> THE SUNNY SIDE OF DIGITAL</div><h2 id="shop-title">Little things, <em>big joy.</em></h2></div>
+				<p>Kurasi digital goods buat layar, ruang, dan waktu luangmu.</p>
+			</div>
+			<div class="shop-toolbar">
+				<div class="category-list" role="group" aria-label="Filter kategori">
+					<button class="category-chip selected" type="button" data-category="all">Semua <span>08</span></button>
+					<button class="category-chip" type="button" data-category="wallpaper">Wallpaper</button>
+					<button class="category-chip" type="button" data-category="sound">Sound</button>
+					<button class="category-chip" type="button" data-category="design">Design kit</button>
+				</div>
+				<label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg><input type="search" id="product-search" placeholder="Cari sesuatu yang cerah..." aria-label="Cari produk"></label>
+			</div>
+			<div class="product-grid" id="product-grid" aria-live="polite"></div>
+			<div class="empty-results" id="empty-results" hidden><span aria-hidden="true">☁</span><h3>Belum ada yang cocok.</h3><p>Coba kata kunci lain atau lihat semua koleksi.</p><button class="text-button" type="button" data-reset-filters>Reset pencarian <span aria-hidden="true">↗</span></button></div>
+			<div class="shop-footnote"><span class="footnote-star" aria-hidden="true">✳</span> Semua produk dikirim dalam format digital. No shipping, just sunshine.</div>
+		</section>
+
+		<section class="game-section" id="play" aria-labelledby="game-title">
+			<div class="game-heading">
+				<div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE GAME, A LITTLE GIFT</div>
+				<h2 id="game-title">Cocokkan kartu,<br><em>bawa pulang hadiah.</em></h2>
+				<p>Temukan 6 pasang kartu untuk membuka diskon 10% dan bonus Sunny Sticker Pack. Hadiah tersimpan di browser ini dan otomatis dipakai saat checkout.</p>
+			</div>
+			<div class="memory-game">
+				<div class="memory-topline"><span id="memory-status" aria-live="polite">Siap bermain? Temukan semua pasangan!</span><span class="memory-moves">Langkah <strong id="memory-moves">0</strong></span></div>
+				<div class="memory-board" id="memory-board" aria-label="Papan permainan memory"></div>
+				<div class="memory-footer"><button class="button button-primary" type="button" id="memory-start">Mulai bermain <span aria-hidden="true">↗</span></button><span class="memory-progress" id="memory-progress">0 / 6 pasangan</span></div>
+				<div class="memory-reward" id="memory-reward" hidden role="status"></div>
+			</div>
+		</section>
+
+		<section class="story-section" id="story">
+			<div class="story-image"><img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1200&q=85" alt="Daun hijau tropis diterpa cahaya matahari"><div class="story-stamp">KEEP IT<br>BRIGHT <span aria-hidden="true">✳</span></div></div>
+			<div class="story-copy"><div class="eyebrow"><span class="eyebrow-line"></span> A SMALL NOTE FROM US</div><h2>We believe in<br><em>bright little things.</em></h2><p>Aerogarden adalah toko kecil untuk hal-hal digital yang bikin hidup terasa sedikit lebih ringan. Terinspirasi langit biru, teknologi ramah, dan optimisme awal internet.</p><a href="#shop" class="story-link">Kenalan lewat koleksi <span aria-hidden="true">↗</span></a><div class="story-doodle" aria-hidden="true">◌</div></div>
+		</section>
+	</main>
+
+	<footer class="site-footer" id="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>aerogarden<span class="brand-period">.</span></span></a><p>Good things, delivered digitally.</p><div class="footer-meta"><span>© 2026 Aerogarden Studio</span><a href="mailto:hello@aerogarden.local">Say hello ↗</a><span>Made under a very blue sky</span></div></footer>
+
+	<div class="drawer-backdrop" data-close-cart hidden></div>
+	<aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+		<div class="drawer-header"><div><span class="eyebrow">YOUR SUNNY LITTLE BAG</span><h2 id="cart-title">Your bag <span class="drawer-count">(0)</span></h2></div><button type="button" class="icon-button close-cart" data-close-cart aria-label="Tutup keranjang"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div>
+		<div class="cart-items" id="cart-items"></div>
+		<div class="cart-empty" id="cart-empty"><span aria-hidden="true">☁</span><p>Bag-mu masih seringan awan.</p><button type="button" class="text-button" data-close-cart>Temukan sesuatu <span aria-hidden="true">↗</span></button></div>
+		<div class="drawer-bottom" id="drawer-bottom"><div class="subtotal-line"><span>Subtotal</span><strong id="cart-subtotal">Rp0</strong></div><div class="subtotal-line discount-line" id="cart-discount-row" hidden><span>Diskon game (10%)</span><strong id="cart-discount">−Rp0</strong></div><div class="subtotal-line cart-total-line"><span>Total</span><strong id="cart-total">Rp0</strong></div><p>Semua harga sudah termasuk pajak.</p><button type="button" class="button button-primary checkout-button" data-checkout>Lanjut ke pembayaran <span aria-hidden="true">↗</span></button><div class="secure-note"><span aria-hidden="true">✳</span> Pembayaran aman · File dikirim instan</div></div>
+	</aside>
+
+	<dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+		<button type="button" class="icon-button dialog-close" data-close-checkout aria-label="Tutup checkout"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button>
+		<div id="checkout-content"></div>
+	</dialog>
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+	<div class="bubble-field" id="bubble-field" aria-label="Gelembung mengambang"></div>
+	<script src="app.js" defer></script>
+</body>
+</html>
