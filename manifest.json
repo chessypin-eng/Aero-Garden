@@ -16,30 +16,22 @@
   ],
   "icons": [
     {
-      "src": "ag (1).png",
+      "src": "./ag%20(1).png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "Untitled design.png",
+      "src": "./Untitled%20design.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "Untitled design.png",
+      "src": "./Untitled%20design.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "screenshot-mobile.png",
-      "sizes": "412x915",
-      "type": "image/png",
-      "form_factor": "narrow"
     }
   ]
 }
