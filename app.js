@@ -346,7 +346,11 @@ document.querySelector('#checkout-dialog').addEventListener('click', event => {
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') closeCart();
 });
-
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(() => console.log('✅ Service Worker terdaftar!'))
+    .catch((err) => console.log('❌ Gagal:', err));
+}
 document.querySelector('#memory-start').addEventListener('click', startMemoryGame);
 renderSavedReward();
 for (let index = 0; index < 9; index += 1) addFloatingBubble();
